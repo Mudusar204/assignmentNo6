@@ -216,11 +216,586 @@
 // }
 // console.log(words);
 // 20==============>. Write a ts program to print all ASCII character with their values
-// var a:number=1
-// while(a>=1&&a<=128){
-//    var character=(String.fromCharCode(a));
-//    console.log(a++,character);
-//     a++
+var a = 1;
+while (a >= 1 && a <= 128) {
+    var character = (String.fromCharCode(a));
+    console.log(a++, character);
+    a++;
+    // 21==================>. Write a ts program to find power of a number using for loop.
+    // var num:number=2;
+    // var exponent:number=5
+    // var num1=1
+    // for(let i=1;i<=exponent;i++){
+    //   num1=(num**i);
+    // }
+    // console.log(`${num}^${exponent}`,"=",num1);
+    // 22=====================>. Write a ts program to find all factors of a number
+    // var inputNum:number=36
+    // for(let i=1;i<inputNum;i++){
+    //    if(inputNum%i==0){
+    //       console.log(i,`is the foctor of ${inputNum}`);
+    //    }
+    // }
+    // 23===============>. Write a ts program to calculate factorial of a number
+    // var number:number=4
+    // var factorial:number=1
+    // for(let i=number;i>=1;i--){
+    //     factorial=factorial*i 
+    // }
+    // console.log(factorial);
+    // 24=======================. Write a ts program to find HCF (GCD) of two numbers
+    // var inputNum1:number=60
+    // var inputNum2:number=36
+    // var count=0
+    // var hcf=0
+    // for(let i=1;i<inputNum1&&inputNum2;i++){
+    //       if(inputNum1%i==0&&inputNum2%i==0){
+    //             hcf=i
+    //             console.log(i);
+    //       }
+    // }
+    // console.log("HCF is",hcf);
+    // 25===================>. Write a ts program to find LCM of two numbers.
+    // var inputNum1:number=20
+    // var inputNum2:number=30
+    // var count=0
+    // var hcf=0
+    // for(let i=1;i<inputNum1&&inputNum2;i++){
+    //       if(inputNum1%i==0&&inputNum2%i==0){
+    //             hcf=i
+    //             // console.log(i);
+    //       }
+    // }
+    // var lcm=(inputNum1*inputNum2)/hcf
+    // console.log("LCM is",lcm);
+    // 26==================>. Write a ts program to check whether a number is Prime number or not
+    // var num=4
+    // var result=true
+    // for(let i=2;i<num;i++){
+    //     if(num%i==0){
+    //         result=false
+    //     }
+    // }
+    //     if(result){
+    //         console.log("number is prime");  
+    //     }
+    //     else{console.log("number is not a prime");
+    //     }
+    // 27=====================>. Write a ts program to print all Prime numbers between 1 to n.
+    // for(let j=1;j<=20;j++){
+    //     var num=j
+    //     var result=true
+    // for(let i=2;i<num;i++){
+    //     if(num%i==0){
+    //         result=false
+    //     }
+    // }
+    //     if(result){
+    //         console.log(j);  
+    //     }
+    // }
+    // 28===================>. Write a ts program to find sum of all prime numbers between 1 to n
+    // var sum=0
+    // var n=5
+    // for(let j=1;j<=n;j++){
+    //         var num=j
+    //         var result=true
+    //     for(let i=2;i<num;i++){
+    //         if(num%i==0){
+    //             result=false
+    //         }
+    //     }
+    //         if(result){
+    //             // console.log(j);
+    //             sum=sum+j
+    //         }
+    //     }
+    //     console.log(sum);
+    // // 29==================>. Write a ts program to find all prime factors of a number.
+    // var inputNum: number = 20
+    // for (let i = 2; i < inputNum; i++) {
+    //       if (inputNum % i == 0) {
+    //             var prime = true
+    //             for (let j = 2; j < i; j++) {
+    //                   if (i % j == 0) {
+    //                         prime = false
+    //                   }
+    //             }
+    //             if (prime) {
+    //                   console.log(i);
+    //             }
+    //       }
+    // }
+    // 30==================> Write a ts program to check whether a number is Armstrong number or not.
+    // var inputNum=371
+    // var num:number=inputNum
+    // var length=num.toString().length
+    // // console.log();
+    // var sum:number=0
+    // while(num>=1){
+    //    var moduel=num%10
+    //    sum+=moduel**length
+    //    num=Math.floor(num/10)
+    // }
+    // // console.log(sum);
+    // if(sum==inputNum){
+    //    console.log(inputNum,"number is palindrone");
+    // }else{
+    //    console.log(inputNum,"is not a palindrone");
+    // }
+    // 31======================>. Write a ts program to print all Armstrong numbers between 1 to n
+    // var inputNum=500
+    // for(let i=1;i<inputNum;i++){
+    //    var n=i
+    // var num:number=n
+    // var length=num.toString().length
+    // var sum:number=0
+    // while(num>=1){
+    //    var moduel=num%10
+    //    sum+=moduel**length
+    //    num=Math.floor(num/10)
+    //    var result=sum
+    // }
+    // if(n==sum){
+    // console.log(sum);
+    // }
+    // }
+    // 32====================>. Write a ts program to check whether a number is Perfect number or not.
+    //  var inputNum:number=496
+    //  var sum:number=0
+    // for(let i=1;i<inputNum;i++){
+    //    if(inputNum%i==0){
+    //       sum+=i
+    //    }
+    // }
+    // if(sum==inputNum){
+    // console.log("Number is perfect");}
+    // else{
+    //    console.log("number is not a perfect number");
+    // }
+    // 33============================. Write a ts program to print all Perfect numbers between 1 to n.
+    // var inputNum:number=28
+    // for(let j=1;j<=inputNum;j++){
+    //    var n:number=j
+    //  var sum:number=0
+    // for(let i=1;i<j;i++){
+    //    if(j%i==0){
+    //       sum+=i
+    //    } 
+    // }
+    // if(sum==j){
+    // console.log(sum)}
+    // }
+    // 34===================>. Write a ts program to check whether a number is Strong number or not
+    // var input:number=145
+    // var num:number=input
+    // var sum:number=0
+    // while(num>=1){
+    //    var modules=num%10
+    //    var number:number=modules
+    // var factorial:number=1
+    // for(let i=number;i>=1;i--){
+    //     factorial=factorial*i    
+    // }
+    // sum+=factorial
+    // num=Math.floor(num/10)
+    // }
+    // if(sum==input){
+    // console.log(input,"is a strong number")}
+    // else{
+    //    console.log(input,"number is not a strog number");
+    // }
+    // 35===================>. Write a ts program to print all Strong numbers between 1 to n.
+    // var input:number=500
+    // for(let j=1;j<=input;j++){
+    // var num:number=j
+    // var sum:number=0
+    // while(num>=1){
+    //    var modules=num%10
+    //    var number:number=modules
+    // var factorial:number=1
+    // for(let i=number;i>=1;i--){
+    //     factorial=factorial*i    
+    // }
+    // sum+=factorial
+    // num=Math.floor(num/10)
+    // }
+    // if(sum==j){
+    // console.log(j)}
+    // }
+    // 36=====================>. Write a ts program to print Fibonacci series up to n terms
+    // var n:number=5
+    // var a=0
+    // var b=1
+    // var c=0
+    // for(let i=0;i<=n;i++){
+    //    c=a+b
+    //    a=b
+    //    b=c
+    //    console.log(c);
+    // }
+    // 37====================>. Write a ts program to find one's complement of a binary number
+    /////////////////////bug if(first number is 0)/////////////////////////
+    // var num=""
+    // var input:number=1000
+    // while(input>=1){
+    //   var modules=input%10
+    //   if(modules==1){
+    //    modules=0
+    //   }
+    //   else if(modules==0){
+    //    modules=1
+    //   }else{
+    //    console.log("plz enter a valid number"); 
+    // }
+    // num+=modules
+    // input=Math.floor(input/10)
+    // }
+    // var num1=num.split('')
+    // var num2=num1.reverse()
+    // // num1.join
+    // // console.log(num1);
+    // var ans=num2.join('')
+    // console.log(ans);
+    // 38======================>. Write a ts program to find two's complement of a binary number.
+    //////////////////////////////////some confuision with 1001///////////////////////////////////
+    // var num=""
+    // var input:number=10010
+    // while(input>=1){
+    //   var modules=input%10
+    //   if(modules==1){
+    //    modules=0
+    //   }
+    //   else if(modules==0){
+    //    modules=1
+    //   }else{
+    //    console.log("plz enter a valid number"); 
+    // }
+    // num+=modules
+    // input=Math.floor(input/10)
+    // }
+    // console.log(num);
+    // var num1=num.split('')
+    // var num2=num1.reverse()
+    // // num1.join
+    // // console.log(num2);
+    // var ans=num2.join('').toString()
+    // // var final =parseFloat(ans)
+    // console.log(ans);
+    // console.log("two complement of ",ans,"is",Number(ans+1));
+    // console.log(num2.join(""));
+    // 39==============>. Write a ts program to convert Binary to Octal number system.
+    // var num:number=10010111
+    // var string=num.toString()
+    // var sum:number=0
+    // var newstring=""
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules==1||modules==0){
+    // sum+=modules*(2**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("enter a binary number");
+    //    break
+    // }
+    // }
+    // console.log(sum);
+    // while(sum>=1){
+    // newstring+=sum%8
+    // sum=Math.floor(sum/8)}
+    // console.log(newstring.split("").reverse().join(""));
+    // 40==================>. Write a ts program to convert Binary to Decimal number system.
+    // var num:number=1010
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules==1||modules==0){
+    // sum+=modules*(2**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a binary number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of ${string} =>`,sum);
+    // 41====================>. Write a ts program to convert Binary to Hexadecimal number system.
+    ///////////////////////////////////// confusion////////////////////////////
+    // var input=11100111
+    // var num:number=input
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules==1||modules==0){
+    // sum+=modules*(2**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a binary number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of ${string} =>`,sum);
+    // var num=sum
+    // var num1=num
+    // var hexa=""
+    // while(num1>=1){
+    // var modeules=num1%16
+    // num1=Math.floor(num1/16)
+    // hexa+=modeules
+    // }
+    // // console.log(hexa);
+    // var hexadecimal=hexa.split("").reverse().join("")
+    // // console.log(octalnum);
+    // console.log("Hexadicimal number of",input,"is",hexadecimal);
+    // 42=====================>. Write a ts program to convert Octal to Binary number system
+    // var input=70
+    // var num:number=input
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules>=0&&modules<8){
+    // sum+=modules*(8**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a octal number");
+    //    break
+    // }
+    // }
+    // // console.log(`decimal number of  octal ${string} =>`,sum);
+    // var num=sum
+    // var num1=num
+    // var binary=""
+    // while(num1>=1){
+    // var modeules=num1%2
+    // num1=Math.floor(num1/2)
+    // binary+=modeules
+    // }
+    // console.log(binary);
+    // var binarynum=binary.split("").reverse().join("")
+    // console.log("binary number of octal",input,"is",binarynum);
+    // 43================>. Write a ts program to convert Octal to Decimal number system.
+    // var num:number=63
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules>=0&&modules<8){
+    // sum+=modules*(8**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a octal number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of  octal ${string} =>`,sum);
+    // 44===================>. Write a ts program to convert octal to hexadecimal number system.
+    ////////////////////////////////////////////////some confuision/////////////////////////////
+    // var input=217
+    // var num:number=input
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules>=0&&modules<8){
+    // sum+=modules*(8**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a octal number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of  octal ${string} =>`,sum);
+    // var num=40
+    // var num1=sum
+    // var hexa=""
+    // while(num1>=1){
+    // var modeules=num1%16
+    // num1=Math.floor(num1/16)
+    // hexa+=modeules
+    // }
+    // console.log(hexa);
+    // var hexadecimal=hexa.split("").reverse().join("")
+    // // console.log(octalnum);
+    // console.log("Hexadicimal number of",input,"is",(hexadecimal));
+    // 45===================>. Write a ts program to convert Decimal to Binary number system.
+    // var num=51
+    // var num1=num
+    // var binary=""
+    // while(num1>=1){
+    // var modeules=num1%2
+    // num1=Math.floor(num1/2)
+    // binary+=modeules
+    // }
+    // console.log(binary);
+    // var binarynum=binary.split("").reverse().join("")
+    // console.log("binary number of",num,"is",Number(binarynum));
+    // 46===================>. Write a ts program to convert Decimal to Octal number system.
+    // var num=99
+    // var num1=num
+    // var octal=""
+    // while(num1>=1){
+    // var modeules=num1%8
+    // num1=Math.floor(num1/8)
+    // octal+=modeules
+    // }
+    // console.log(octal);
+    // var octalnum=octal.split("").reverse().join("")
+    // // console.log(octalnum);
+    // console.log("octal number of",num,"is",Number(octalnum));
+    // 47====================>. Write a ts program to convert Decimal to Hexadecimal number system.
+    // var num=40
+    // var num1=num
+    // var hexa=""
+    // while(num1>=1){
+    // var modeules=num1%16
+    // num1=Math.floor(num1/16)
+    // hexa+=modeules
+    // }
+    // console.log(hexa);
+    // var hexadecimal=hexa.split("").reverse().join("")
+    // // console.log(octalnum);
+    // console.log("Hexadicimal number of",num,"is",Number(hexadecimal));
+    // 48====================>. Write a ts program to convert Hexadecimal to Binary number system.
+    // var input=190
+    // var num:number=input
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules>=0&&modules<16){
+    // sum+=modules*(16**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a hexadicimal number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of  hexadicimal ${string} =>`,sum);
+    // var num=sum
+    // var num1=num
+    // var binary=""
+    // while(num1>=1){
+    // var modeules=num1%2
+    // num1=Math.floor(num1/2)
+    // binary+=modeules
+    // }
+    // console.log(binary);
+    // var binarynum=binary.split("").reverse().join("")
+    // console.log("binary number of",input,"is",(binarynum));
+    // 49==================>. Write a ts program to convert Hexadecimal to octal number system.
+    // var input=119
+    //  var num:number=input
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules>=0&&modules<16){
+    // sum+=modules*(16**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a hexadicimal number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of  hexadicimal ${string} =>`,sum);
+    // var num=sum
+    // var num1=num
+    // var octal=""
+    // while(num1>=1){
+    // var modeules=num1%8
+    // num1=Math.floor(num1/8)
+    // octal+=modeules
+    // }
+    // console.log(octal);
+    // var octalnum=octal.split("").reverse().join("")
+    // // console.log(octalnum);
+    // console.log("octal number of",input,"is",(octalnum));
+    // 50==================>. Write a ts program to convert Hexadecimal to Decimal number system.
+    // var num:number=100
+    // var string=num.toString()
+    // var sum:number=0
+    // for(let i=0;i<=string.length;i++){
+    // var modules=num%10
+    // if(modules>=0&&modules<16){
+    // sum+=modules*(16**i)
+    // num=Math.floor(num/10)}
+    // else{
+    //    console.log("type a hexadicimal number");
+    //    break
+    // }
+    // }
+    // console.log(`decimal number of  hexadicimal ${string} =>`,sum);
+    // 51=========================>. Write a ts program to print Pascal triangle upto n rows.
+    ///////////////////////////not complete//////////////////////////////////
+    // let c="       "
+    // let a=1
+    // let b=a
+    // let d=""
+    // for(let i=9;i>1;i--){
+    //    let data= c.slice(0,i)+d+d
+    //    d+=b
+    //    a+=1
+    //    b=a
+    //     console.log(data);
+    // }
+    //////////////// //////////////////////////frequency wala code by sir///////////////////////////////
+    // let num = 4333882;
+    // let some  = num.toString();
+    // for(let item of some){
+    //     console.log(item + " repeated " + f(num, item) )
+    // }
+    // function f(array:any,value:any){
+    //     array = array.toString();
+    //     var n = 0;
+    //     for(i = 0; i < array.length; i++){
+    //         if(array[i] == value){n++}
+    //     }
+    //     return n;
+    // }
+    /////////////////////////////////factrization wala code//////////////////////////////////////////////////
+    // var num = 20
+    // var b = ","
+    // for (let i = 2; i <= num; i++) {
+    //       if (num % i == 0) {
+    //             num = num / i
+    //             console.log(i);
+    //             for (let j = 2; j <= num; j++) {
+    //                   if (num % j == 0) {
+    //                         num = num / j
+    //                         console.log(j);
+    //                         //   console.log(num);
+    //                         for (let k = 2; k <= num; k++) {
+    //                               if (num % k == 0) {
+    //                                     console.log(k);
+    //                                     num = num / k
+    //                                     for (let l = 2; l <= num; l++) {
+    //                                           if (num % k == 0) {
+    //                                                 console.log(l);
+    //                                                 num = num / l
+    //                                                 for (let m = 2; m <= num; m++) {
+    //                                                       if (num % m == 0) {
+    //                                                             console.log(m);
+    //                                                             num = num / m
+    //                                                             for (let n = 2; n <= num; n++) {
+    //                                                                   if (num % n == 0) {
+    //                                                                         console.log(n);
+    //                                                                         num = num / n
+    //                                                                         break
+    //                                                                   }
+    //                                                             }
+    //                                                       }
+    //                                                 }
+    //                                           }
+    //                                     }
+    //                               }
+    //                         }
+    //                   }
+    //             }
+    //       }
+    // }
+}
 // 21==================>. Write a ts program to find power of a number using for loop.
 // var num:number=2;
 // var exponent:number=5
